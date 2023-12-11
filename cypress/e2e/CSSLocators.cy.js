@@ -7,4 +7,5 @@ describe('CSSLocators',() => {
         cy.get(".lighter").contains("T-Shirts") //Assertion
 
     })
+    
 })
