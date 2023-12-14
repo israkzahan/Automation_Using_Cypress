@@ -4,6 +4,7 @@ describe('My first Test',()=>{
     it('Test1_Verify_Title_Positive',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/")
         cy.title().should('eq','OrangeHRM')
+        
     })
     it('Test2_Verify_Title_Nagetive',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/")

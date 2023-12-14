@@ -19,10 +19,11 @@ describe('After watching the workshop video',()=>{
     cy.get(':nth-child(3) > .primary_btn').click()
     cy.get('.header_info > :nth-child(3) > .far').click()
     cy.get('.name_mobile > p').should('have.text', 'Israk')
-
+    
+    // Print the geeting text
     cy.get('.name_mobile > p') 
-  .invoke('text') // Get the text content of the element
-  .then((text) => {
+      .invoke('text') 
+      .then((text) => {
     cy.log('Element text:', text);
   });
     
