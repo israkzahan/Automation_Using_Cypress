@@ -10,7 +10,7 @@ describe('After watching the workshop video',()=>{
         cy.get('.search_wrapper > .fas').click()
         cy.get(':nth-child(1) > .product_image > a > [style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"] > [alt="Product"]').click();
         cy.get('.product_name').contains("HeadPhone")
-        cy.get('.product_name').contains("HeadPhone").click();
+        //cy.get('.product_name').contains("HeadPhone").click();
         cy.get('.product_name').should('have.text', 'HeadPhone')
         cy.get('.add_to_wish').click()
         cy.get('.d-flex > .primary_btn').click()

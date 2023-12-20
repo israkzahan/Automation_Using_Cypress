@@ -29,6 +29,7 @@ describe('handle dropdowns', ()=>{
         }
       })
       cy.get('#APjFqb').should('have.value','cypress automation tutorial')
+      //32 min
 
     })
 

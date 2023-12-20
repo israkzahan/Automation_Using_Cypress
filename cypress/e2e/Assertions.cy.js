@@ -17,6 +17,7 @@ describe("Assertions demo",()=>{
         cy.get("div[class='item active'] h1:nth-child(1)").contains("AutomationExercise")
         cy.title().should('include','Automation Exercise')
         cy.get('a > img').should('be.visible')
+        cy.log("Log is Visible")
         .and('exist')
 
 
